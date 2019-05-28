@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoticiaComponent } from './noticia/noticia.component';
 import { AdcNoticiaComponent } from './adc-noticia/adc-noticia.component';
@@ -20,7 +21,8 @@ import { NavibarComponent } from './navibar/navibar.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot()
+    AppRoutingModule,
+    //NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
